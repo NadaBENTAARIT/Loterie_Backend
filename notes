@@ -1,0 +1,66 @@
+
+
+
+*************************************************
+fazet ayy fichier teba3  cognito lezm IAM   AmazonCognitoPowerUser
+
+authorizer w chochi fi api getway
+
+fazet layer( code en commun fi lambda)
+
+fazet model ( tna9ess 3l code w testi request ml apigateway )
+
+fazet l cron
+fazet les ressources
+
+fazet les cors li yet7allou lel front
+
+cochy proxy bch tnejem testi bl postman
+
+
+SNS b3athna bih les msg teb3in verif cognito
+
+!! jamais t7ot body fi requete get
+
+#dee167
+
+
+https://loterie-sdf123.auth.eu-north-1.amazoncognito.com/login?response_type=token&client_id=4m43rs0i5cl4cuej6ejsotqv20&redirect_uri=https://jwt.io  (pour recuperer l interface de sign in)
+
+https://www.youtube.com/watch?v=6A9pqr4qQMo    ********************** Sprinhgboot lambda
+
+https://www.youtube.com/watch?v=Ut5CkSz6NR0     ( crud with lambda)
+
+https://www.youtube.com/watch?v=n3br_TzJW28
+
+https://www.youtube.com/watch?v=9crTLAT_4uY    (lambda,gateway,cognito)
+
+https://www.youtube.com/watch?v=lHgxFfioaR4&t=29s   ( deploiment)
+
+/////////////////////////////////  couche (layer) w modele w fichier authorizer pour les roles..
+
+https://medium.com/employbl/tutorial-for-building-a-web-application-with-amazon-s3-lambda-dynamodb-and-api-gateway-6d3ddf77f15a    (architecture)
+
+https://ttpsc.com/en/blog/how-to-take-care-of-the-security-of-serverless-applications-in-aws/   (architecture)
+
+
+https://aws.amazon.com/fr/serverless/build-a-web-app/      (servless app)
+
+
+file:///C:/Users/Nada/Downloads/MemoireJackBarker20210701_1735%20(1).pdf   ( rapport archi client serveur)
+
+nada      pwd:  nada0000N*
+
+doc aws
+
+a est un service sans serveur, il n'y a aucune
+infrastructure à gérer, et vous payez uniquement pour les requêtes que vous exécutez.
+
+https://publicationslist.org/data/a.april/ref-738/LOG795%20-%20Rapport%20final%20-%20PFE024.pdf    (raport serveless)
+
+
+https://docs.aws.amazon.com/fr_fr/whitepapers/latest/aws-overview/aws-overview.pdf
+
+Je m'excuse pour l'erreur précédente dans ma réponse. En effet, lors de la création d'un User Pool dans Amazon Cognito, un app client est créé automatiquement. Ce client est généralement utilisé pour représenter l'application cliente qui se connecte au User Pool pour effectuer l'authentification.
+
+Lorsque vous créez un User Pool, Amazon Cognito génère un app client par défaut avec des paramètres préconfigurés. Cet app client est associé à votre User Pool et peut être utilisé pour les flux d'authentification.
