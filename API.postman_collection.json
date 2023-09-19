@@ -1,0 +1,2309 @@
+{
+	"info": {
+		"_postman_id": "32890ce8-0dce-48f2-b5ed-b3cbbdf5641c",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21524093",
+		"_collection_link": "https://cloudy-robot-990285.postman.co/workspace/Imperial~24be9fc9-b8d1-4d22-a2ed-9d0053054024/collection/26562823-32890ce8-0dce-48f2-b5ed-b3cbbdf5641c?action=share&source=collection_link&creator=21524093"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Admin Confirm seller",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiJiYzdhZjYxNi1jZDYxLTRkOTItYmU0Yi05ZWE1ZjA4OWZhOGIiLCJldmVudF9pZCI6IjNhNzNiNjk1LTk5MDUtNDNmMi04MGEwLTA2ZTE3NmNmZDBmMiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE3NDcwOTAsImV4cCI6MTY5MTc1MDY5MCwiaWF0IjoxNjkxNzQ3MDkwLCJqdGkiOiJjZmNmZjE4Zi02OWJkLTQwMDEtYmQxNS04NzY2MDk3YTBjYTYiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.kXfkHLNqljKWqe3N518nl_v0gnkBDVRo5TGGrgIZ3UexaIWDqMQsnA82OHqFWLzOIp_hvCxKJ0q66fJF5xDWQt2o5FtU3A5u0rPJY2kHPKc1Z1xXyiGJcYXUdwWQNXhYSceBf6tDFgjxLXrFoFj6XHIuInLV4Fj7s9HwT3YzagWP9UOD6xuj2nLBChG6WYmc08jw6YRw1X8iQZ-XQtb36_VEAOJ-6i7W1rGuoA6PnEzOUqvPmeyK3lFsGOjRFA4z7o6QWLZ09cmiCASX_Iu4AnqSSGr0--6L03oIajWoKuQB_vOCrvPVCNwdondioTOr1n31nLJx_qskbf0a4kVVrQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"manar.hedhli24@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/users/sellers/approve",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"admin",
+								"users",
+								"sellers",
+								"approve"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin reject seller",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiJiYzdhZjYxNi1jZDYxLTRkOTItYmU0Yi05ZWE1ZjA4OWZhOGIiLCJldmVudF9pZCI6IjNhNzNiNjk1LTk5MDUtNDNmMi04MGEwLTA2ZTE3NmNmZDBmMiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE3NDcwOTAsImV4cCI6MTY5MTc1MDY5MCwiaWF0IjoxNjkxNzQ3MDkwLCJqdGkiOiJjZmNmZjE4Zi02OWJkLTQwMDEtYmQxNS04NzY2MDk3YTBjYTYiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.kXfkHLNqljKWqe3N518nl_v0gnkBDVRo5TGGrgIZ3UexaIWDqMQsnA82OHqFWLzOIp_hvCxKJ0q66fJF5xDWQt2o5FtU3A5u0rPJY2kHPKc1Z1xXyiGJcYXUdwWQNXhYSceBf6tDFgjxLXrFoFj6XHIuInLV4Fj7s9HwT3YzagWP9UOD6xuj2nLBChG6WYmc08jw6YRw1X8iQZ-XQtb36_VEAOJ-6i7W1rGuoA6PnEzOUqvPmeyK3lFsGOjRFA4z7o6QWLZ09cmiCASX_Iu4AnqSSGr0--6L03oIajWoKuQB_vOCrvPVCNwdondioTOr1n31nLJx_qskbf0a4kVVrQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"manar.hedhli24@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/users/sellers/reject",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"admin",
+								"users",
+								"sellers",
+								"reject"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign In ",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n // Admin\r\n{\r\n    \"username\": \"hedhlii.manar@gmail.com\",\r\n    \"password\": \"Newpas1@@\"\r\n}\r\n \r\n// Player\r\n//  {\r\n//     \"username\": \"+33778883571\",\r\n//     \"password\": \"P@ssw0rd\"\r\n// }\r\n\r\n// {\r\n//     \"username\": \"manar.hedhli24@gmail.com\",\r\n//     \"password\": \"P@ssw0rd\"\r\n// }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/authentification/signin",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"authentification",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign up as seller",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"manar.hedhli24@gmail.com\",\r\n  \"password\": \"P@ssw0rd\",\r\n  \"email\": \"manar.hedhli24@gmail.com\",\r\n  \"phone_number\": \"+21693589787\",\r\n  \"given_name\": \"Manar\",\r\n  \"family_name\": \"hedhlii\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/seller/signup",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"seller",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "refreshtoken",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"refreshToken\": \"eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.ejFAvIf75Xvz5QMC_4dt_1v91jiDj4Rrmb1Ou93dwEyuDwEyRwD1TvpdmGWv4l5kdLcPGAf8RsQSy_55673A2N9y2b2BKdZA17f_DUsw730r6UIn1OVifExU8uOCmVS_kLYf4Ni95AiWj4TctVNlbVr-jnvCZka31iPIXPXE3EnawnE6sykM4lWbBBdE8kY0e-ndFGRuUnI1O2U1qIgyg5FVuc-aEm0wdakuAzV3pQha7ulVICZV64JzmbDYCg4WxD6-mO3a917_XM8qeBNoacWDU_USr3lHDybdEM-CAFb5wtGxrNR7mRn7BtaP9D8i16vAICCq0yrdfkZu9fMNxQ.UMs-Lgq9Sh5Eldgi.zKiXQKfrGBJGP3h0F1K1XL5xfpJbyztQ7cMmwBW9VZX5J_aOAiprkvEXB_a81lrz9nltKnMTl8yOA_iKoJNwZNrv-1SGT-iZ6BgSBO7RLwaUV3PmBsnyX3s8ENT8RdGyKVz6DZMMNmGIt5sWzBDz_d3N0cXtpQ7RPoASR10KnoB70POCqldRzun9FheSkw3Avftc8wEWZfZTEkpYvmFVgvj9rGgmMDGTIjwHi14UAQvbbulV2v7incFfEvUkzIEMtqJgMq040FoLSHMOz0av8wNw4wOOipUSkt9EvcS2-YZ9WnAXrvkjy3IeXl5WpaLMyBRSEHCK4Y8MYpEAlwBWWY68BcjY_0D_uCE-XQeSumlOthiz4PU4yYpqTKYNyV7_hhT7N13a1XTYEYi0pPOUJlsloxlOx98Vqr3bo8v-7WVrVyKZCe17SJUU8s73zexEIeX7GhBBwIwPmAD8yNAODwg7NbselhhvocVO13YLguNkqmeQY3uqQPo_lIHAynGlAMOhAbm6tWFyNbCnCBZFxZUH2ajvRe_FSaAfVEFkoABPhH8_z0BoxieNZj_TEUi6u8qJX1wzp6W5GMglVrbhqBccZCk57_rVR4WTjdViW0h1M6ONq61WLRt-UtWHpqVpbYT7EDEFYTYFXkRaAO_-w0E-fQPFp-y2xem7-XO8PChALsn9PsW4A8jXDR79v0Mz3jDT-q5lnWl-7IQNluSOisId7tPJejNZLOey8cPmGW-llMDR9jjo4T_rKBvUi6GBZ7yNWHfc1UgrCwiXo9Ry_iZiH-sJtnOuIQQE3PAEtFDgBXbkv2-sG1nYroGenvNPJFIjXFaSHCkho9-EUq2G5Ye9lTlW8P__MuHu1YBXg-EOo-ww2dzZzjIOcWIofCMl08IRC6ydOZ8fbODTvJ1m7CbHuc8JddbxIvX6_2nNHe1JzBITVhik4izB-e4bGS95dumJxzQVMFwn2lPY-Toc2VrVyN0UtFbtkCSTXkUKVqB-KyHg2vCf0qYyLYG29c0qWvAOABO1qwPc8cIUE-qLQ7BgyNFKVCBAmdfj5HhYWmjYKLeZF26m1ttj9sc7iXJnupRb8sd-yO0vl9_ilCWCbJEm7VKofvF-6qsS0c1ESjsLwW3H3CdTdzbP81-QtJ6BNY6DPbsa8WjInlT5zKltM7-XGz-ppjbCYFO6PRH3FyisUdqdnsr0k7V_HCF8weLfLJl3BlAM1SYS-BKp9pKR8hO2zE2Klue5Gf24RREDYIMI4Xkela0uYc1JZqHPANBnZk6HKjEJTFtKbKzyxxAVYNy01oyyS0RIaAIijLs8q2kxpsIIcAnyT5TdIMY.qQeO-lcoj8wBHO06TLsCeg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/refreshtoken",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"refreshtoken"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sign up as player with tel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"+33778883571\",\r\n  \"password\": \"P@ssw0rd\",\r\n  \"phone_number\": \"+33778883571\",\r\n  \"email\": \"nada123.bentaarit@gmail.com\",\r\n  \"given_name\": \"nada\",\r\n  \"family_name\": \"bentaarit\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/player/signup",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"player",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sign up as player with mail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"nada123.bentaarit@gmail.com\",\r\n  \"password\": \"P@ssw0rd\",\r\n  \"phone_number\": \"+33778883571\",\r\n  \"email\": \"nada123.bentaarit@gmail.com\",\r\n  \"given_name\": \"nada\",\r\n  \"family_name\": \"bentaarit\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/authentification/signup",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"authentification",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "confirmation player",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"+33778883571\",\r\n  \"confirmation_code\": \"339547\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/authentification/player/confirmation",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"authentification",
+								"player",
+								"confirmation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"+33778883571\",\r\n  \"code\": \"086527\",\r\n  \"new_password\": \"new-password123N\",\r\n  \"confirm_password\": \"new-password123N\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/authentification/changepassword",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"authentification",
+								"changepassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset password player",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email_or_phone\": \"+33778hjk883571\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/authentification/resetpassword",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"authentification",
+								"resetpassword"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DRAW",
+			"item": [
+				{
+					"name": "put the drawn numbers",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiJhZmYzNTk0ZS1iNzFiLTQ2OGMtYWZlZi1mNmMzYTVjZDBmMTYiLCJldmVudF9pZCI6Ijc5ZWQwMzhmLWUwOGQtNDVlNi05M2JhLWM1YmYyMzE2ZTc2MyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE5NDQ2NDUsImV4cCI6MTY5MTk0ODI0NSwiaWF0IjoxNjkxOTQ0NjQ1LCJqdGkiOiJhYjFmOTRmZi02MzBiLTRjODAtYjQ1Ni0yY2RiMjEwMjQxODYiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.DqbLri6p3JpzuC22zi_iooUAX7YtxOn8OdVS3mnRugOEvo_Agg6gzBuhvOrO_w0dPDxMdIdd3Hbw60Hu5aYcokwk2aXCKp0iIK7SY76CBdh7MOUiCWSr3aZtF4Ilr-CDKXiHjJ_dCmFqIXaYujAiu0j3a6lJWBchpZb3amuoNeT9WHM8-UCbhkVl5w7t22bS4bfmcERJj1d_ocfGD-SjNLgaQZ-xz3zPEoh3NXQBj4Jxt71D3Jv9Nt-9vlXHXVblmyzbqxIUgAWC0Ln-Bgc_yJMsZlvCV2PH37962marPUlY7tvO3szxIHF2l33sPevVJIItyehXD44XlJAjJiA2yw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"drawn_ball_numbers\" : \"46-13-24-02-20-07\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/draw/1/result/potential",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"admin",
+								"draw",
+								"1",
+								"result",
+								"potential"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get draw by id ",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI0MWQ5MzBmZS1jMDUxLTcwZmEtNjRiNS05Y2ZhN2FjMzIwNmYiLCJjb2duaXRvOmdyb3VwcyI6WyJQTEFZRVJTIl0sImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5ldS13ZXN0LTMuYW1hem9uYXdzLmNvbVwvZXUtd2VzdC0zX2xFbzJsUzlWciIsImNsaWVudF9pZCI6IjUxMGlpcjAzazlzMG9nOGJkbmY3a2lzZjBjIiwib3JpZ2luX2p0aSI6ImM5YjQxZDgyLWFiOGUtNDQyYy1hMjUwLTkwNzBhZjg4ZWVmNSIsImV2ZW50X2lkIjoiMmIyYjVmYTktY2Y2MC00MjZiLTliYjktNjFhOWJjNGMwZTUxIiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTY5MTcwNjEyMiwiZXhwIjoxNjkxNzA5NzIyLCJpYXQiOjE2OTE3MDYxMjIsImp0aSI6IjM0NWVmYjlkLTNhNjYtNDc2Mi1iMWY1LTMwZTZlNGE1YzgwMSIsInVzZXJuYW1lIjoiNDFkOTMwZmUtYzA1MS03MGZhLTY0YjUtOWNmYTdhYzMyMDZmIn0.DYMqSeoZ5XBBSybJ0MM5GzPTvcFxnpRTr4QW30A27z_OUGDpJHR95tPNoRvFCup4WXzufnuYf3meldVzeCsEN-C5_VFLRY84dI6njNBVQ03Td_xjw3VHecewSSZ5WVu6mx3rcyv7B9UMVXXCEIBqTGduCR6jkgnPTzFZn3a2pTAyQhREj2sPPBc8K-ZiiIxSiPQb5v4DSUKCiZaQ7lzrEvFRYX71QCcwtAf_flWWaOb3DwEdOFyq41MZcNMxptjgpqotcrvnoD-tANO2CfRb8cem1cPTKd7hw5sn22T8ZFZA7ZCqyz4zA3NP1zZAObE7ieN3dje7xTMxloGCbDwZHA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/draw/5",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"draw",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put draw date",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiIzZWE3NjY2NS01ZDE4LTQyMDgtOWYxNy1lZDU1NmQ0OGE2NTciLCJldmVudF9pZCI6IjZiNGIzNzE0LTA5M2YtNDllNC04MjdkLTFjZjVmMjBkNmVhYiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE2NjM0MDksImV4cCI6MTY5MTY2NzAwOSwiaWF0IjoxNjkxNjYzNDA5LCJqdGkiOiI1YjMzNGY2ZS05ZDYzLTQ3OTEtYTE1YS0yMGRiOTVhYTE1NzYiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.adDJ2YFKLbrpnjRQI5CXRxbjM4hawGKXGCR9iyknGtPlNKfeNhk9CJvyuZloJRnUjfPSvFsUJZEhiUURFCuP1q5M-v9RGESM3VVnqySkgu7-MThhaR72UG8uojfmF7C6B_e5NdkU8KDyVEGhCkpJ0Gh5176CdV3JmldvIkZinXetjrPNzmezBBlSK9p4GGS3ySqSNJ6X4C8PkcC3zeVa75hsYobuizweeMAwMRdvsZIeR1DzwAJuZbrTWVmzApklwtpy9qinjZUbLEfGaW2fMQQC4ofprL0TqvlVzFTdMkF4JSKeJlbFiikTcixfc3gxHkmrMZA0XXfr_ljvZGm2bQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"draw_date\" :  \"2022-08-31T18:01:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/draw/3",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"admin",
+								"draw",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all draws",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiIxMWM5ZDBmZS0yMGQxLTcwMWQtOTJkNi1hOGRjMDNhNmFkZjYiLCJjb2duaXRvOmdyb3VwcyI6WyJQTEFZRVJTIiwiQURNSU4iXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmV1LXdlc3QtMy5hbWF6b25hd3MuY29tXC9ldS13ZXN0LTNfbEVvMmxTOVZyIiwiY2xpZW50X2lkIjoiNTEwaWlyMDNrOXMwb2c4YmRuZjdraXNmMGMiLCJvcmlnaW5fanRpIjoiMTVmOTM0N2MtYjViZi00MGY4LWFiYzYtNDQ0YzJkMzE1ZGM3IiwiZXZlbnRfaWQiOiI2MzkyZGM4My1kMGJjLTQ1Y2EtOTYwYi02Y2E4OGU0Y2UxZmQiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjkxOTcwMDA3LCJleHAiOjE2OTE5NzM2MDcsImlhdCI6MTY5MTk3MDAwNywianRpIjoiNmFhM2EyNDctZWM0NS00ZDE2LWIxZTctNDUwMTgzODg3OGMzIiwidXNlcm5hbWUiOiIxMWM5ZDBmZS0yMGQxLTcwMWQtOTJkNi1hOGRjMDNhNmFkZjYifQ.vp_mWYbPLLswuOLgB1txNCH_0shNP1agMccbzDcwObn3A9SfwjIk28T4HVFmA9k1xccHEzQiDt4Y9YFsG4vyaF9abF0CQj_wQQJFgAgcsgBQCj5DdQOZUDE8i5NOlTM51aMKD_eHZP_5a89TJaHfA_6cFLvnnYMTgA42gZUU97mj6duL9htq5i7SRxgBy7O0zUA6wADzSRQknP85k56FuVmoIgDqrV-FHZbwCFSC0RmaZRrtaSfQi9Uqj7-L4pdWa2OXZYDVgKX7acK8FxXOOGodjEoSYOLksLPbe_W_5qqwSyZfB2GC1vrVmyBDokeoFZpnmT_2UOtAPJHDyt07Qw\n",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/draw?limit=50&offset=0",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"draw"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "50"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put result for guarantee code",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiIxMWM5ZDBmZS0yMGQxLTcwMWQtOTJkNi1hOGRjMDNhNmFkZjYiLCJjb2duaXRvOmdyb3VwcyI6WyJQTEFZRVJTIiwiQURNSU4iXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmV1LXdlc3QtMy5hbWF6b25hd3MuY29tXC9ldS13ZXN0LTNfbEVvMmxTOVZyIiwiY2xpZW50X2lkIjoiNTEwaWlyMDNrOXMwb2c4YmRuZjdraXNmMGMiLCJvcmlnaW5fanRpIjoiMTVmOTM0N2MtYjViZi00MGY4LWFiYzYtNDQ0YzJkMzE1ZGM3IiwiZXZlbnRfaWQiOiI2MzkyZGM4My1kMGJjLTQ1Y2EtOTYwYi02Y2E4OGU0Y2UxZmQiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjkxOTcwMDA3LCJleHAiOjE2OTE5NzM2MDcsImlhdCI6MTY5MTk3MDAwNywianRpIjoiNmFhM2EyNDctZWM0NS00ZDE2LWIxZTctNDUwMTgzODg3OGMzIiwidXNlcm5hbWUiOiIxMWM5ZDBmZS0yMGQxLTcwMWQtOTJkNi1hOGRjMDNhNmFkZjYifQ.vp_mWYbPLLswuOLgB1txNCH_0shNP1agMccbzDcwObn3A9SfwjIk28T4HVFmA9k1xccHEzQiDt4Y9YFsG4vyaF9abF0CQj_wQQJFgAgcsgBQCj5DdQOZUDE8i5NOlTM51aMKD_eHZP_5a89TJaHfA_6cFLvnnYMTgA42gZUU97mj6duL9htq5i7SRxgBy7O0zUA6wADzSRQknP85k56FuVmoIgDqrV-FHZbwCFSC0RmaZRrtaSfQi9Uqj7-L4pdWa2OXZYDVgKX7acK8FxXOOGodjEoSYOLksLPbe_W_5qqwSyZfB2GC1vrVmyBDokeoFZpnmT_2UOtAPJHDyt07Qw\n",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/draw/1/result/guarantee",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"admin",
+								"draw",
+								"1",
+								"result",
+								"guarantee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Winning tickets = potentiel winners (ball_numbers)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiJhZmYzNTk0ZS1iNzFiLTQ2OGMtYWZlZi1mNmMzYTVjZDBmMTYiLCJldmVudF9pZCI6Ijc5ZWQwMzhmLWUwOGQtNDVlNi05M2JhLWM1YmYyMzE2ZTc2MyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE5NDQ2NDUsImV4cCI6MTY5MTk0ODI0NSwiaWF0IjoxNjkxOTQ0NjQ1LCJqdGkiOiJhYjFmOTRmZi02MzBiLTRjODAtYjQ1Ni0yY2RiMjEwMjQxODYiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.DqbLri6p3JpzuC22zi_iooUAX7YtxOn8OdVS3mnRugOEvo_Agg6gzBuhvOrO_w0dPDxMdIdd3Hbw60Hu5aYcokwk2aXCKp0iIK7SY76CBdh7MOUiCWSr3aZtF4Ilr-CDKXiHjJ_dCmFqIXaYujAiu0j3a6lJWBchpZb3amuoNeT9WHM8-UCbhkVl5w7t22bS4bfmcERJj1d_ocfGD-SjNLgaQZ-xz3zPEoh3NXQBj4Jxt71D3Jv9Nt-9vlXHXVblmyzbqxIUgAWC0Ln-Bgc_yJMsZlvCV2PH37962marPUlY7tvO3szxIHF2l33sPevVJIItyehXD44XlJAjJiA2yw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/draw/1/result/potential",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"admin",
+								"draw",
+								"1",
+								"result",
+								"potential"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get winning ticket (guarantee code)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiJhZmYzNTk0ZS1iNzFiLTQ2OGMtYWZlZi1mNmMzYTVjZDBmMTYiLCJldmVudF9pZCI6Ijc5ZWQwMzhmLWUwOGQtNDVlNi05M2JhLWM1YmYyMzE2ZTc2MyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE5NDQ2NDUsImV4cCI6MTY5MTk0ODI0NSwiaWF0IjoxNjkxOTQ0NjQ1LCJqdGkiOiJhYjFmOTRmZi02MzBiLTRjODAtYjQ1Ni0yY2RiMjEwMjQxODYiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.DqbLri6p3JpzuC22zi_iooUAX7YtxOn8OdVS3mnRugOEvo_Agg6gzBuhvOrO_w0dPDxMdIdd3Hbw60Hu5aYcokwk2aXCKp0iIK7SY76CBdh7MOUiCWSr3aZtF4Ilr-CDKXiHjJ_dCmFqIXaYujAiu0j3a6lJWBchpZb3amuoNeT9WHM8-UCbhkVl5w7t22bS4bfmcERJj1d_ocfGD-SjNLgaQZ-xz3zPEoh3NXQBj4Jxt71D3Jv9Nt-9vlXHXVblmyzbqxIUgAWC0Ln-Bgc_yJMsZlvCV2PH37962marPUlY7tvO3szxIHF2l33sPevVJIItyehXD44XlJAjJiA2yw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/draw/1/result/guarantee",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"admin",
+								"draw",
+								"1",
+								"result",
+								"guarantee"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GAME",
+			"item": [
+				{
+					"name": "update game",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiJjMjY2NGVlMi1kZWRiLTQ4NDktOWVhNi1mZTY4YjBjZWY1YWYiLCJldmVudF9pZCI6IjE4YTUxYjRjLTQwYjEtNDFkYy04Mzg5LTdmZWNiZjc1YTA3MyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE5Mzc4NTQsImV4cCI6MTY5MTk0MTQ1NCwiaWF0IjoxNjkxOTM3ODU0LCJqdGkiOiIxMDBiNDNjZC02NmM5LTQwNDAtYTM1My02MGE0MWQ1NGViYzgiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.W4bpy0HubdTjkS4AXzBB773ty5EfXfZ-tnmHlbI3FB53zj5Pkq6cuMJBkApiJEcB5pMNQSe4PLkiFHFF70np_mQXu_Ahv_9NLungqxtxgpu_tVWeN8G5KA7GMeoVzFMtl8GVPO-mLFCOr_13M2PCMXKHL15qOs9ZWsZ4wTciYqvskPH8jd92LWTAnwTsqPNxppHMJ0z5R3V0jZVNllIQKqEI6QHYrs4eiw9obiZegOUWB4CZpBYtQ9cdGpPn3QJ6pOgfBH_LOka2m7aU6UCaWFkvDaaZMuhrVAFgluVFoAnyKRi58lwzMQzPlkw47iaKrpkBI_zQgHWVOujppBrNFA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Qutidien pour Août\",\r\n  \"start_date\": \"2023-08-13T08:30:00Z\",  \r\n  \"end_date\": \"2023-08-13T15:42:00Z\",\r\n  \"scheduled_draw_date\": \"2023-08-13T23:00:00Z\", \r\n   \"prize_amount\": 3750\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/game/9",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"admin",
+								"game",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add game",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiIxMTRkNDVhZC02Y2Q0LTQ1YmItYjE5NC04NzgwNjFhYzE2MzAiLCJldmVudF9pZCI6ImVjNGZmY2QyLWVlN2ItNGRkZi1iMWJjLWVlNzU5MTU2NTEwYSIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE5Mzg2MTMsImV4cCI6MTY5MTk0MjIxMiwiaWF0IjoxNjkxOTM4NjEzLCJqdGkiOiI0Y2JjMmRhMC1lNzJlLTRiODctYWU4NS1lMTdmYTQzYTI5MDYiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.SJwMMhpk4WoQMyqTEzdhFL1ZBnRGYSyWfPwRnPhG5ri3xgF6BKHu4iYOY6JoBURDzPwp2_Pz1iZJ3M2AB5KBROCMBDaIQM3fBKN7_ydlr1VxjqIpXoXUIpU3aWdErf4fPRuZGYMulBJ6jP1VOibdga1FdqyK2OQOMCAmiZWcE06kKi2IG_QKMip4iYbP5_2pe-ZKNnrvLH90HnqCOrIGul5IeaWkFXiOxWjkjuOfd0nhIbDygaSpjFtZ75jkJ8oJH3FTee_AGRV-u4_KrvivohWiKjao74KHqZtEMDBqlqxPAYZUU7jZov7Xe5UuiRTYScoyiaBf_HpnTdVmswxFdQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Qutidien pour Août\",\r\n  \"start_date\": \"2023-08-10T08:30:00Z\",  \r\n  \"end_date\": \"2023-08-10T15:26:00Z\",\r\n  \"scheduled_draw_date\": \"2023-08-10T23:00:00Z\",  \r\n  \"type\" : \"BD\",  \r\n   \"prize_amount\": 3750\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/game",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"admin",
+								"game"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get game by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiIzNjBiOGNiYy1iZjFkLTQ3MDktOGNhNy0wOTIwNzlkNGZkOGMiLCJldmVudF9pZCI6IjBhMzhkYjYxLTM5NTUtNGFjOC1hNTVjLTI3ODRkNWNiNDU5MiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE2NTM5MzYsImV4cCI6MTY5MTY1NzUzNiwiaWF0IjoxNjkxNjUzOTM2LCJqdGkiOiJkNGUyN2Q1Zi03YmMxLTQ1NmItYjQ4MS0wMDhmZGZlMjA3OTMiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.XCal1iQdn5jbbLf2GDb5aKzV1qFnPzvQqNP8FcVYWSMsn9xoF4HhaeaGv1-yqCtadCvh6a2MflLhmpMjpqv77ZHv-hx0BGttY0Vhib8GyJb0AHKURrCgYl64cN3EjEQoiKHDjh1jB3upYg8EvpPVRGL7KH5crP5Qb0WRvPWJngkVKp6UFSI42m7b16p4etIDo6NgswMCDZlArknjfmewMWMSGOl64UhqeSaVNul6h4-aHjEi_HEwvPgHgo_Eer2I-L8ryXd7aSFd90vQiD11dTItwqxl0xR7kfLznFMiPXTC8IFZpN1ONM4MK8yWIp5rxk1nvNjEPK1ITOMSBwTmZA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/game/3",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"game",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all games",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiI1MzQwY2FkOC04YTA5LTQ3YWQtYWZjNC03ZGNkMjUzZGE1ZmYiLCJldmVudF9pZCI6ImQ1MGY1NTE1LWYzYzgtNGNjYi1iODUyLWExMzAxYzEwMDNkNiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE3MDcwOTUsImV4cCI6MTY5MTcxMDY5NCwiaWF0IjoxNjkxNzA3MDk1LCJqdGkiOiJhNDFhNjdlOC1lNzgyLTQ3NzYtYmQyZi05NTkxY2ZkZWI4ZmEiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.Ri-ZhrQR5vSWwuJJa4MobYg6fV45tfAba-Qpfn5VVwe38clItegPwwzj2j81h38iJkcGdexXffKZ_L0DAsQGG94ngWkwXSEF-SmHHerriIh73BVyi-5cWdG9vGoBr699dTSb5ikWQw8FOM4IDirxjvroU_amU_Qystj9RiRpg2RiKWiY_MgYfID7iJwftBjXaLTmxEsRyVn3XocTe_cau6jX2HPfrXtyNugZSA3nOx2OlBtAvE-B7oYDKwTXRmzSCStvJfjQ8UXzJWPau56g6fupgXaATZPFNnKrwr0P5OW63LUzN_B217i8swzB4USFHiG-8OeOInOgbuPudMz1nA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/game?limit=50&offset=0",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"game"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "50"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "disable periodic game",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiI0YzY1YjU1OS0xNjZkLTQ4MzgtYTZiZS1hYWNjNTNmNmE0M2YiLCJldmVudF9pZCI6IjczODZhNzIxLWNlNWItNGE4ZC04ZGRmLTc3NjBhNTI0MWI2OCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTExNDc4MTksImV4cCI6MTY5MTE1MTQxOSwiaWF0IjoxNjkxMTQ3ODE5LCJqdGkiOiJlOWJmNjIwMS1mYWZjLTQxNjMtODBjZi02NDdmNmRlNGE4MWUiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.HJMZcu7mjtjoEuQenqdqFCAACJ1OJza19HX67UjSqXNpLbfG6S3qGjGYcm7pvmfy_yTMCnFwFznTS-7CalewUsO7VLsWUzEgxeuK7-mD6Lw6ZQlLAMzRqVBx1XL28LiLGJ6u3OwivzRcmsSbDmui9aTMMoWOEsqFpCCx_09hP2j4vPo5P1xleBPLOLQfitQNNxTxJguCXH9MKLmfnWIXL6X6h8ePW32UIhjPcfl6XjC7SgHmN4cMHj32IgoalCPXbNKSPSO29s9uXAWom4JU6YLbrU0Fv2ZzteR75j44ckGYjtHa8wsWDLFyMyp4gi7W3VzsyC5SyJOnCKLQsx3tCw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/game/11/disable",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"admin",
+								"game",
+								"11",
+								"disable"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "enable periodic game",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiJhMjFmNDNmYy0zY2IyLTQ5OTgtYTIxNC0zODQ3NjgxYjE1MDQiLCJldmVudF9pZCI6IjFhZDJlY2EwLWIzMzEtNGU1OC04OGMwLWY4ZThhOWE4MGJlMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTEzOTQ1MzEsImV4cCI6MTY5MTM5ODEzMSwiaWF0IjoxNjkxMzk0NTMxLCJqdGkiOiJmMGRjMWRhNy0wZDBiLTQyODItYjQxYi0yOTQ1MzViZTNiMzYiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.TPSdSVyhbcCYTHVPv9aIoCMEclDAE5HRDR74RG-8JAWgrM2T_gbxf7EpnRTIc5rhOK6f8ZWMIFrXk-y7rj2ScL0kbnGSs0h5wpDc_60DmnTvmUJ6v7PKorFHqfXHsabzYG1xVF06tG13RhEGsYNm9pAt8h9lNAytUshkDqNiyMjUgs4PyqmdIB3E4I_AAmnfVI44MHIGO-ctXDoq4twqv0Gy8qxqudY_50ZB8F3jAJwBB1tqfrntTs_hBJpmALzV1f-Jm5-VAoLOv9jI0IY4fkhMJgbpKRJopcIurQmMmIbUxGnoxVeb66-DCPqJ-QMJI-1wL6X0-3pMYfnrNrAOEw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/game/14/enable",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"admin",
+								"game",
+								"14",
+								"enable"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete game",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiIxY2YwMDZmOC1mMDg0LTQ4NTAtYWYyMi03NDgzZGFmODdhMmIiLCJldmVudF9pZCI6IjBlOWM4Y2IwLWExMGEtNGU0Zi04NmNhLTY3YWEyMDM1MWQzZCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE5MjU5OTEsImV4cCI6MTY5MTkyOTU5MSwiaWF0IjoxNjkxOTI1OTkxLCJqdGkiOiJhMDAyOTA0ZC0yNmNmLTQ5YzctOTA0Zi0xZTZmMDAyMWY0MWIiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.fSg5Iy-C3mRoPakkezL2Qm-aYFTdrTKn3t6dJbySfzJDbGetgsE0ZYwmfaQlx7VdmwRIjVvODQ6K1RDpLoQZAy6NZLAdCUBzTEwCLg4DuEipNhtoGeJecNXQJsOMGJEflsyI9X8C4u4QjC2b_8z9zVfeUQvKREstOf8U4YV2FowPb9r_FVi1fKAQJtc8hNsP6u3w-cbJ6sDctpQMKQB3Ue0QrUD939udlwRozmdyHxMxrNldEHPeki_Nsx34QqlSWvRZGj4BcUDg8I7PfT6X04LrgUvhbQEuwPR-W3e-cI2xdcO-rINPSZZl8Pi0AHFhv49SaJ2Itq_q7KwhOG5CcA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/game/6",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"admin",
+								"game",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PROFILE",
+			"item": [
+				{
+					"name": "profile ( get attributes)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJkMWM5MzBkZS0zMGYxLTcwYjgtZjhhOC02MGNjZjI3OWY0ZjkiLCJjb2duaXRvOmdyb3VwcyI6WyJTRUxMRVJTIl0sImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5ldS13ZXN0LTMuYW1hem9uYXdzLmNvbVwvZXUtd2VzdC0zX2xFbzJsUzlWciIsImNsaWVudF9pZCI6IjUxMGlpcjAzazlzMG9nOGJkbmY3a2lzZjBjIiwib3JpZ2luX2p0aSI6ImEyZDhjZTBhLWI3YTktNDJiYy05M2YxLTRiODBjNmVlMDFmNiIsImV2ZW50X2lkIjoiMzBkNzc5YjktZGI4Zi00YzUxLWE4NmMtNmE2YzY4YmE5ZDE4IiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTY4OTkzMDI1OSwiZXhwIjoxNjg5OTMzODU4LCJpYXQiOjE2ODk5MzAyNTksImp0aSI6IjE5MzhlYWJiLWIwZmItNDlkMS04ZWMxLTk0MGU4MGI3N2FmZSIsInVzZXJuYW1lIjoiZDFjOTMwZGUtMzBmMS03MGI4LWY4YTgtNjBjY2YyNzlmNGY5In0.o8afxZm1bU0UtMt0UnJnPnUwDYbzmVCWmN-NauhWVvIWDrJFdEK2mwsdL2LdifAe_V2o8TVT3TMX8cYyn4rjdV-hgOr9PAGev5TSdGvGNA6oX5dCb6NvdAmzY0DWCdH0rVycPmoD7O8ez7widKGjjcpRp7WLzBzHOlHIoH258Z4zigbrvnRJI8Ya3lnjMdldcJyCkKK69jb5NcCRa53xHiqD2mZ5RReWdFQ6gQwKZYaDTBRjtyLlpDSN-RZO98jtcnNB0nncVyvI0k6u1xS2J27pAT3VjqzBQXU3MajqIh560OPkkm97pBDRTr_N_nTkyVvyMahOcTfFQFatcqTGIA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/profile",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changepassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJQTEFZRVJTIiwiQURNSU4iXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmV1LXdlc3QtMy5hbWF6b25hd3MuY29tXC9ldS13ZXN0LTNfbEVvMmxTOVZyIiwiY2xpZW50X2lkIjoiNTEwaWlyMDNrOXMwb2c4YmRuZjdraXNmMGMiLCJvcmlnaW5fanRpIjoiYTQ2YTIyZmYtZGQ3MC00NmJmLWJmNDgtZWU3MzVjM2Y0N2NiIiwiZXZlbnRfaWQiOiIyMDI4MGEzMy00YWY2LTQ4MjktYWY3ZC04YTU4NjE0YWNjNDQiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjg5NDQyNDgzLCJleHAiOjE2ODk0NDYwODMsImlhdCI6MTY4OTQ0MjQ4MywianRpIjoiMWNmOTAyZjItZTRkMS00OGExLTk1ZmQtMTdiNWY2MDFjNzE2IiwidXNlcm5hbWUiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTcifQ.Z10lWANDo2rL7hECSj9owfAOcsDYZeb9x0qSDiFQ9FpkM_GZHesqmUKuxzOLiG4FDpW1N7mweCdF3gO_5nMK8yEbPg9oHUAuUwzf6IXpLIzKXpDBD5bxeyIAnU8Fvkg1q6n3cvFrUZ7PiZc1bFYYeC3rKAAtWKNAfi1Lu8p-lPT3YsyPCKb6-8CWGoX3Tjg6x3O-9AlYA1CuCnxewpw2bDzSWk-EZfNRfJR-LPzh5k4kZiGoPpafUA-ZPoXanlfli3VSKduGWZs7EDg1mRvacFz0FjVUDLSA0jn-dfW_M7nYZdOr3IpbFBk7GsHgCxTI8c19SxdKPXUp0nn6FRFgyQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"previousPassword\" : \"Manar1@@\" ,\r\n    \"proposedPassword\" : \"Newpas1@@\"\r\n}"
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/profile/changepassword",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"profile",
+								"changepassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile (update attributes)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5ZDBmZS0wMDExLTcwYWEtMzNjNy1kY2Q3NzNmZDNhMWQiLCJjb2duaXRvOmdyb3VwcyI6WyJQTEFZRVJTIl0sImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5ldS13ZXN0LTMuYW1hem9uYXdzLmNvbVwvZXUtd2VzdC0zX2xFbzJsUzlWciIsImNsaWVudF9pZCI6IjUxMGlpcjAzazlzMG9nOGJkbmY3a2lzZjBjIiwib3JpZ2luX2p0aSI6ImMxNDdjYjIyLTIxMGItNGRkNS1hYzJjLWE4ZmJhNDBjNDFkMyIsImV2ZW50X2lkIjoiZjAyMWEzNzUtMGZmNS00NTE2LWIwNjQtODFkMWI5NTE5OTk1IiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTY4OTQ0NzYwNywiZXhwIjoxNjg5NDUxMjA3LCJpYXQiOjE2ODk0NDc2MDcsImp0aSI6IjRiODM0MmQ0LTQyYzItNDNmOC05YzMyLTMzYWQwYTAyMTgxOCIsInVzZXJuYW1lIjoiZTFmOWQwZmUtMDAxMS03MGFhLTMzYzctZGNkNzczZmQzYTFkIn0.BfhlB3BjWUCH44U2iT19-2fX7r5wxNKGoIaKmtTZU1uyjne_l5XA7Bm0-6lNj6vnc-c9vSxF3r3WQTcAHpZ9rufgE8_XI4kVogZeLG1YjJ1a9-7c2WtxfHKQKdSQIPmZ8-lyOmYL4o1uyz7tkXIGnfO3OBQyowCt1BNE2d-P0eW7HE7GlWzHQfE8gyE5-u33V5ob47j6wdLu91C_ufkp0eGsYpal2OIOxtehgq-hwIbuV79NAc9P8dKyuUrf9jchIddCyqTwiWBvaOvClDuDlqMbYStXz_hjD3OgktOKbgxPGEks-bseSNQsEgsxDz7rn0upTwtvWL1s9i8JayZXLg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"given_name\" : \"Man\" \r\n}"
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/profile",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "globalsignout (from all devices)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJQTEFZRVJTIiwiQURNSU4iXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmV1LXdlc3QtMy5hbWF6b25hd3MuY29tXC9ldS13ZXN0LTNfbEVvMmxTOVZyIiwiY2xpZW50X2lkIjoiNTEwaWlyMDNrOXMwb2c4YmRuZjdraXNmMGMiLCJvcmlnaW5fanRpIjoiYTQ2YTIyZmYtZGQ3MC00NmJmLWJmNDgtZWU3MzVjM2Y0N2NiIiwiZXZlbnRfaWQiOiIyMDI4MGEzMy00YWY2LTQ4MjktYWY3ZC04YTU4NjE0YWNjNDQiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjg5NDQyNDgzLCJleHAiOjE2ODk0NDYwODMsImlhdCI6MTY4OTQ0MjQ4MywianRpIjoiMWNmOTAyZjItZTRkMS00OGExLTk1ZmQtMTdiNWY2MDFjNzE2IiwidXNlcm5hbWUiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTcifQ.Z10lWANDo2rL7hECSj9owfAOcsDYZeb9x0qSDiFQ9FpkM_GZHesqmUKuxzOLiG4FDpW1N7mweCdF3gO_5nMK8yEbPg9oHUAuUwzf6IXpLIzKXpDBD5bxeyIAnU8Fvkg1q6n3cvFrUZ7PiZc1bFYYeC3rKAAtWKNAfi1Lu8p-lPT3YsyPCKb6-8CWGoX3Tjg6x3O-9AlYA1CuCnxewpw2bDzSWk-EZfNRfJR-LPzh5k4kZiGoPpafUA-ZPoXanlfli3VSKduGWZs7EDg1mRvacFz0FjVUDLSA0jn-dfW_M7nYZdOr3IpbFBk7GsHgCxTI8c19SxdKPXUp0nn6FRFgyQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/profile/globalsignout",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"profile",
+								"globalsignout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SALES POINT",
+			"item": [
+				{
+					"name": "province",
+					"item": [
+						{
+							"name": "insert province",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiI4NjljMmE5MS0xZTJmLTQ1MDQtYWU1Mi0xMGM3NzA0MDg2ZGEiLCJldmVudF9pZCI6ImNlYjdjMGIwLTI3MGEtNGZiOC05NTIxLWRkZTVlM2ZjYTUwMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE3NDA2NTksImV4cCI6MTY5MTc0NDI1OSwiaWF0IjoxNjkxNzQwNjU5LCJqdGkiOiJlNDA4NzEwYS01ZjQ0LTRjOTUtOWFhZC0yMWE3MDA3OGMzYzAiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.hisXh4UB-HYEZbM0dSkmkzIGYwMU6fAb6gDlhGZaZ6Re_i2utPf7l1zElqIBzJyO4-B3z3CXQVBfg8jnKA28fO7-UiQVAQ6DKJSekRU0HEdKUqsR9ddArjYzN769D6EbjoHxzIajP6N7MDmdSGxlmm72e6_Xy1P2e1agMzw7kUPQjb1qjkfkBqBjI1qX-mKC3kMY9GGMI1xKvIRxP3WWPp7AZyBSBeP-7Y4Z_VQJ6_WvhAuigQ9MDNbvgHNOIsXkrPOgVp-NJjAy7OFm7qbeiekT0deoe7MH-LszIRisTiEHa1ZtUxAwxhUeBqN9L5yy2xo30Th2R9WVcXscCpFN_A",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Nom de la province\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/province",
+									"protocol": "https",
+									"host": [
+										"n8z9k2prmd",
+										"execute-api",
+										"af-south-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"admin",
+										"province"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update province",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiI4NjljMmE5MS0xZTJmLTQ1MDQtYWU1Mi0xMGM3NzA0MDg2ZGEiLCJldmVudF9pZCI6ImNlYjdjMGIwLTI3MGEtNGZiOC05NTIxLWRkZTVlM2ZjYTUwMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE3NDA2NTksImV4cCI6MTY5MTc0NDI1OSwiaWF0IjoxNjkxNzQwNjU5LCJqdGkiOiJlNDA4NzEwYS01ZjQ0LTRjOTUtOWFhZC0yMWE3MDA3OGMzYzAiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.hisXh4UB-HYEZbM0dSkmkzIGYwMU6fAb6gDlhGZaZ6Re_i2utPf7l1zElqIBzJyO4-B3z3CXQVBfg8jnKA28fO7-UiQVAQ6DKJSekRU0HEdKUqsR9ddArjYzN769D6EbjoHxzIajP6N7MDmdSGxlmm72e6_Xy1P2e1agMzw7kUPQjb1qjkfkBqBjI1qX-mKC3kMY9GGMI1xKvIRxP3WWPp7AZyBSBeP-7Y4Z_VQJ6_WvhAuigQ9MDNbvgHNOIsXkrPOgVp-NJjAy7OFm7qbeiekT0deoe7MH-LszIRisTiEHa1ZtUxAwxhUeBqN9L5yy2xo30Th2R9WVcXscCpFN_A",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Privince updated\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/province/27",
+									"protocol": "https",
+									"host": [
+										"n8z9k2prmd",
+										"execute-api",
+										"af-south-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"admin",
+										"province",
+										"27"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete province",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/province/20",
+									"protocol": "https",
+									"host": [
+										"n8z9k2prmd",
+										"execute-api",
+										"af-south-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"admin",
+										"province",
+										"20"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get province by id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiI4NjljMmE5MS0xZTJmLTQ1MDQtYWU1Mi0xMGM3NzA0MDg2ZGEiLCJldmVudF9pZCI6ImNlYjdjMGIwLTI3MGEtNGZiOC05NTIxLWRkZTVlM2ZjYTUwMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE3NDA2NTksImV4cCI6MTY5MTc0NDI1OSwiaWF0IjoxNjkxNzQwNjU5LCJqdGkiOiJlNDA4NzEwYS01ZjQ0LTRjOTUtOWFhZC0yMWE3MDA3OGMzYzAiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.hisXh4UB-HYEZbM0dSkmkzIGYwMU6fAb6gDlhGZaZ6Re_i2utPf7l1zElqIBzJyO4-B3z3CXQVBfg8jnKA28fO7-UiQVAQ6DKJSekRU0HEdKUqsR9ddArjYzN769D6EbjoHxzIajP6N7MDmdSGxlmm72e6_Xy1P2e1agMzw7kUPQjb1qjkfkBqBjI1qX-mKC3kMY9GGMI1xKvIRxP3WWPp7AZyBSBeP-7Y4Z_VQJ6_WvhAuigQ9MDNbvgHNOIsXkrPOgVp-NJjAy7OFm7qbeiekT0deoe7MH-LszIRisTiEHa1ZtUxAwxhUeBqN9L5yy2xo30Th2R9WVcXscCpFN_A",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/province/27",
+									"protocol": "https",
+									"host": [
+										"n8z9k2prmd",
+										"execute-api",
+										"af-south-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"admin",
+										"province",
+										"27"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "gel list province",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiI4NjljMmE5MS0xZTJmLTQ1MDQtYWU1Mi0xMGM3NzA0MDg2ZGEiLCJldmVudF9pZCI6ImNlYjdjMGIwLTI3MGEtNGZiOC05NTIxLWRkZTVlM2ZjYTUwMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE3NDA2NTksImV4cCI6MTY5MTc0NDI1OSwiaWF0IjoxNjkxNzQwNjU5LCJqdGkiOiJlNDA4NzEwYS01ZjQ0LTRjOTUtOWFhZC0yMWE3MDA3OGMzYzAiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.hisXh4UB-HYEZbM0dSkmkzIGYwMU6fAb6gDlhGZaZ6Re_i2utPf7l1zElqIBzJyO4-B3z3CXQVBfg8jnKA28fO7-UiQVAQ6DKJSekRU0HEdKUqsR9ddArjYzN769D6EbjoHxzIajP6N7MDmdSGxlmm72e6_Xy1P2e1agMzw7kUPQjb1qjkfkBqBjI1qX-mKC3kMY9GGMI1xKvIRxP3WWPp7AZyBSBeP-7Y4Z_VQJ6_WvhAuigQ9MDNbvgHNOIsXkrPOgVp-NJjAy7OFm7qbeiekT0deoe7MH-LszIRisTiEHa1ZtUxAwxhUeBqN9L5yy2xo30Th2R9WVcXscCpFN_A",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/province",
+									"protocol": "https",
+									"host": [
+										"n8z9k2prmd",
+										"execute-api",
+										"af-south-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"admin",
+										"province"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "city",
+					"item": [
+						{
+							"name": "insert city",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"For test\",\r\n  \"postal_code\": \"0000\",\r\n  \"province_id\": 12\r\n}\r\n"
+								},
+								"url": {
+									"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/city",
+									"protocol": "https",
+									"host": [
+										"n8z9k2prmd",
+										"execute-api",
+										"af-south-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"admin",
+										"city"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update city",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiI4NjljMmE5MS0xZTJmLTQ1MDQtYWU1Mi0xMGM3NzA0MDg2ZGEiLCJldmVudF9pZCI6ImNlYjdjMGIwLTI3MGEtNGZiOC05NTIxLWRkZTVlM2ZjYTUwMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE3NDA2NTksImV4cCI6MTY5MTc0NDI1OSwiaWF0IjoxNjkxNzQwNjU5LCJqdGkiOiJlNDA4NzEwYS01ZjQ0LTRjOTUtOWFhZC0yMWE3MDA3OGMzYzAiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.hisXh4UB-HYEZbM0dSkmkzIGYwMU6fAb6gDlhGZaZ6Re_i2utPf7l1zElqIBzJyO4-B3z3CXQVBfg8jnKA28fO7-UiQVAQ6DKJSekRU0HEdKUqsR9ddArjYzN769D6EbjoHxzIajP6N7MDmdSGxlmm72e6_Xy1P2e1agMzw7kUPQjb1qjkfkBqBjI1qX-mKC3kMY9GGMI1xKvIRxP3WWPp7AZyBSBeP-7Y4Z_VQJ6_WvhAuigQ9MDNbvgHNOIsXkrPOgVp-NJjAy7OFm7qbeiekT0deoe7MH-LszIRisTiEHa1ZtUxAwxhUeBqN9L5yy2xo30Th2R9WVcXscCpFN_A",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"ville\",\r\n  \"postal_code\":\"00000\",\r\n  \"province_id\":\"33\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/city/1",
+									"protocol": "https",
+									"host": [
+										"n8z9k2prmd",
+										"execute-api",
+										"af-south-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"admin",
+										"city",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete city",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/city/4",
+									"protocol": "https",
+									"host": [
+										"n8z9k2prmd",
+										"execute-api",
+										"af-south-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"admin",
+										"city",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get list city",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "content",
+										"value": "",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiI4NjljMmE5MS0xZTJmLTQ1MDQtYWU1Mi0xMGM3NzA0MDg2ZGEiLCJldmVudF9pZCI6ImNlYjdjMGIwLTI3MGEtNGZiOC05NTIxLWRkZTVlM2ZjYTUwMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE3NDA2NTksImV4cCI6MTY5MTc0NDI1OSwiaWF0IjoxNjkxNzQwNjU5LCJqdGkiOiJlNDA4NzEwYS01ZjQ0LTRjOTUtOWFhZC0yMWE3MDA3OGMzYzAiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.hisXh4UB-HYEZbM0dSkmkzIGYwMU6fAb6gDlhGZaZ6Re_i2utPf7l1zElqIBzJyO4-B3z3CXQVBfg8jnKA28fO7-UiQVAQ6DKJSekRU0HEdKUqsR9ddArjYzN769D6EbjoHxzIajP6N7MDmdSGxlmm72e6_Xy1P2e1agMzw7kUPQjb1qjkfkBqBjI1qX-mKC3kMY9GGMI1xKvIRxP3WWPp7AZyBSBeP-7Y4Z_VQJ6_WvhAuigQ9MDNbvgHNOIsXkrPOgVp-NJjAy7OFm7qbeiekT0deoe7MH-LszIRisTiEHa1ZtUxAwxhUeBqN9L5yy2xo30Th2R9WVcXscCpFN_A",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/city",
+									"protocol": "https",
+									"host": [
+										"n8z9k2prmd",
+										"execute-api",
+										"af-south-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"admin",
+										"city"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get city by id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiI4NjljMmE5MS0xZTJmLTQ1MDQtYWU1Mi0xMGM3NzA0MDg2ZGEiLCJldmVudF9pZCI6ImNlYjdjMGIwLTI3MGEtNGZiOC05NTIxLWRkZTVlM2ZjYTUwMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE3NDA2NTksImV4cCI6MTY5MTc0NDI1OSwiaWF0IjoxNjkxNzQwNjU5LCJqdGkiOiJlNDA4NzEwYS01ZjQ0LTRjOTUtOWFhZC0yMWE3MDA3OGMzYzAiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.hisXh4UB-HYEZbM0dSkmkzIGYwMU6fAb6gDlhGZaZ6Re_i2utPf7l1zElqIBzJyO4-B3z3CXQVBfg8jnKA28fO7-UiQVAQ6DKJSekRU0HEdKUqsR9ddArjYzN769D6EbjoHxzIajP6N7MDmdSGxlmm72e6_Xy1P2e1agMzw7kUPQjb1qjkfkBqBjI1qX-mKC3kMY9GGMI1xKvIRxP3WWPp7AZyBSBeP-7Y4Z_VQJ6_WvhAuigQ9MDNbvgHNOIsXkrPOgVp-NJjAy7OFm7qbeiekT0deoe7MH-LszIRisTiEHa1ZtUxAwxhUeBqN9L5yy2xo30Th2R9WVcXscCpFN_A",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/city/11",
+									"protocol": "https",
+									"host": [
+										"n8z9k2prmd",
+										"execute-api",
+										"af-south-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"admin",
+										"city",
+										"11"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "street",
+					"item": [
+						{
+							"name": "add street",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\" : \"street 1\", \r\n    \"city_id\" : \"7\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/street",
+									"protocol": "https",
+									"host": [
+										"n8z9k2prmd",
+										"execute-api",
+										"af-south-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"admin",
+										"street"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get street by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/street/3",
+									"protocol": "https",
+									"host": [
+										"n8z9k2prmd",
+										"execute-api",
+										"af-south-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"admin",
+										"street",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update street",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\" : \"update street 1\", \r\n    \"city_id\" : \"7\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/street/3",
+									"protocol": "https",
+									"host": [
+										"n8z9k2prmd",
+										"execute-api",
+										"af-south-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"admin",
+										"street",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete street",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/street/4",
+									"protocol": "https",
+									"host": [
+										"n8z9k2prmd",
+										"execute-api",
+										"af-south-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"admin",
+										"street",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get all streets",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/street",
+									"protocol": "https",
+									"host": [
+										"n8z9k2prmd",
+										"execute-api",
+										"af-south-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"admin",
+										"street"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "salespoint",
+					"item": [
+						{
+							"name": "create sales point",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiI4NjljMmE5MS0xZTJmLTQ1MDQtYWU1Mi0xMGM3NzA0MDg2ZGEiLCJldmVudF9pZCI6ImNlYjdjMGIwLTI3MGEtNGZiOC05NTIxLWRkZTVlM2ZjYTUwMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE3NDA2NTksImV4cCI6MTY5MTc0NDI1OSwiaWF0IjoxNjkxNzQwNjU5LCJqdGkiOiJlNDA4NzEwYS01ZjQ0LTRjOTUtOWFhZC0yMWE3MDA3OGMzYzAiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.hisXh4UB-HYEZbM0dSkmkzIGYwMU6fAb6gDlhGZaZ6Re_i2utPf7l1zElqIBzJyO4-B3z3CXQVBfg8jnKA28fO7-UiQVAQ6DKJSekRU0HEdKUqsR9ddArjYzN769D6EbjoHxzIajP6N7MDmdSGxlmm72e6_Xy1P2e1agMzw7kUPQjb1qjkfkBqBjI1qX-mKC3kMY9GGMI1xKvIRxP3WWPp7AZyBSBeP-7Y4Z_VQJ6_WvhAuigQ9MDNbvgHNOIsXkrPOgVp-NJjAy7OFm7qbeiekT0deoe7MH-LszIRisTiEHa1ZtUxAwxhUeBqN9L5yy2xo30Th2R9WVcXscCpFN_A",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id_seller\":\"3149808e-d071-7097-4fb0-662cba1a2e82\",\r\n  \"name\": \" test\",\r\n  \"device_code\": \"DEVICE001\",\r\n  \"fiscal_code\": \"FISCAL001\",\r\n  \"street_id\": 6\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/salespoint",
+									"protocol": "https",
+									"host": [
+										"n8z9k2prmd",
+										"execute-api",
+										"af-south-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"admin",
+										"salespoint"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete sales point",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/salespoint/2",
+									"protocol": "https",
+									"host": [
+										"n8z9k2prmd",
+										"execute-api",
+										"af-south-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"admin",
+										"salespoint",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update sales point",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiI4NjljMmE5MS0xZTJmLTQ1MDQtYWU1Mi0xMGM3NzA0MDg2ZGEiLCJldmVudF9pZCI6ImNlYjdjMGIwLTI3MGEtNGZiOC05NTIxLWRkZTVlM2ZjYTUwMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE3NDA2NTksImV4cCI6MTY5MTc0NDI1OSwiaWF0IjoxNjkxNzQwNjU5LCJqdGkiOiJlNDA4NzEwYS01ZjQ0LTRjOTUtOWFhZC0yMWE3MDA3OGMzYzAiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.hisXh4UB-HYEZbM0dSkmkzIGYwMU6fAb6gDlhGZaZ6Re_i2utPf7l1zElqIBzJyO4-B3z3CXQVBfg8jnKA28fO7-UiQVAQ6DKJSekRU0HEdKUqsR9ddArjYzN769D6EbjoHxzIajP6N7MDmdSGxlmm72e6_Xy1P2e1agMzw7kUPQjb1qjkfkBqBjI1qX-mKC3kMY9GGMI1xKvIRxP3WWPp7AZyBSBeP-7Y4Z_VQJ6_WvhAuigQ9MDNbvgHNOIsXkrPOgVp-NJjAy7OFm7qbeiekT0deoe7MH-LszIRisTiEHa1ZtUxAwxhUeBqN9L5yy2xo30Th2R9WVcXscCpFN_A",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id_seller\":\"3149808e-d071-7097-4fb0-662cba1a2e82\",\r\n  \"name\": \"neojw\",\r\n  \"device_code\": \"ABC123\",\r\n  \"fiscal_code\": \"XYZ45688888\",\r\n  \"street_id\": 5\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/salespoint/5",
+									"protocol": "https",
+									"host": [
+										"n8z9k2prmd",
+										"execute-api",
+										"af-south-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"admin",
+										"salespoint",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get list sales point",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiIxMWM5ZDBmZS0yMGQxLTcwMWQtOTJkNi1hOGRjMDNhNmFkZjYiLCJjb2duaXRvOmdyb3VwcyI6WyJQTEFZRVJTIiwiQURNSU4iXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmV1LXdlc3QtMy5hbWF6b25hd3MuY29tXC9ldS13ZXN0LTNfbEVvMmxTOVZyIiwiY2xpZW50X2lkIjoiNTEwaWlyMDNrOXMwb2c4YmRuZjdraXNmMGMiLCJvcmlnaW5fanRpIjoiZTQxZjZlODItYTY5Yy00Mzg3LWEwM2EtZGM0MDY4ZmM2ZjU1IiwiZXZlbnRfaWQiOiJlMDkyYTk3YS00YTk1LTQ4OGMtOGVhNi02ZDc5NTc4OGFkNzciLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjkxOTM4MzQ5LCJleHAiOjE2OTE5NTA4MTcsImlhdCI6MTY5MTk0NzIxNywianRpIjoiNDk1YmJmMTYtY2M2Yi00ZTgwLWFlZDktMTYxN2Q0ZGQ0MGViIiwidXNlcm5hbWUiOiIxMWM5ZDBmZS0yMGQxLTcwMWQtOTJkNi1hOGRjMDNhNmFkZjYifQ.UDfIF3sm7WcixJcrI5s0Xv8uhKNAkQ98CpOS7lqaLnZf77qsDzYBm7ZCO0fx9oN1OxBhS7KJaOtcW9FK1PSqIszmBJsnnF_LU_lWh-NJwGOesAy_e9NEAWxJRNIOjCNS3uiiBb9yGmeRPSyCK35NySFj9L8so44nPXrm6wAKpeghku69W0fgkABgCJTHrcbx0gqeLMRHm7lrl4kHL3rPKuX34Zp4H0Xy61T4ALgpJpU5piPlD02buwOzzLbvVjNMbesOZsq0g4r0V355R0IWGnxtzHz9QuWZl-EXlyHP-UqBkj0_fIczonAQ0zAedVn-f1-OduyYu0-sSjTFQPmOdg\n",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/salespoint",
+									"protocol": "https",
+									"host": [
+										"n8z9k2prmd",
+										"execute-api",
+										"af-south-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"admin",
+										"salespoint"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get sales point by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/salespoint/4",
+									"protocol": "https",
+									"host": [
+										"n8z9k2prmd",
+										"execute-api",
+										"af-south-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"dev",
+										"admin",
+										"salespoint",
+										"4"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "SELLER",
+			"item": [
+				{
+					"name": "Get point of sale",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI0MWQ5MzBmZS1jMDUxLTcwZmEtNjRiNS05Y2ZhN2FjMzIwNmYiLCJjb2duaXRvOmdyb3VwcyI6WyJTRUxMRVJTIl0sImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5ldS13ZXN0LTMuYW1hem9uYXdzLmNvbVwvZXUtd2VzdC0zX2xFbzJsUzlWciIsImNsaWVudF9pZCI6IjUxMGlpcjAzazlzMG9nOGJkbmY3a2lzZjBjIiwib3JpZ2luX2p0aSI6ImZjN2M2Yzg5LTAyNDQtNDYxOC1hZmZhLWM0NDNjMjZlM2UwNCIsImV2ZW50X2lkIjoiYTM4ZDE1Y2UtMzQyYi00NTc3LWE3NTktMzMyZDY0YmNmZmVhIiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTY5MTc0OTA0OCwiZXhwIjoxNjkxNzUyNjQ4LCJpYXQiOjE2OTE3NDkwNDgsImp0aSI6IjgwN2UyM2FmLWM2YWMtNDRmYi04OWM5LWI4ODEwN2VlMDM0YyIsInVzZXJuYW1lIjoiNDFkOTMwZmUtYzA1MS03MGZhLTY0YjUtOWNmYTdhYzMyMDZmIn0.V30ZDY9OIbFmqQPa_9kgi7GiOCRR_-CwbW9EZdzl0eiostrHwKzCU_yTnaeAAd6n9q6W96dNvYPQTEy6mivlvCak4POem879sB0TLSt3QIHey2dfmW_VRJrK5Rj21eozvdpzLjWfdkmq-wKGw2bkLRFxJfygmS9CKejah2GvY6_P6ks431G1Sc0d_LgRcxSyqdZBuWfnhZ6b8oynopngbiQqrk_e9kjqcBoFWRzF751va38mc-iM_fNTYu5U3g3hmIGY6OKsEezHvdRdyP1Hv6b7djyfnAIiGxYHhM_vt8iE5eo9AwgQIerddAV7mu89M1RRDLdPqSFLcPam2-c5Fw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/seller/point_of_sale",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"seller",
+								"point_of_sale"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TICKET",
+			"item": [
+				{
+					"name": "add ticket for GU draw",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI0MWQ5MzBmZS1jMDUxLTcwZmEtNjRiNS05Y2ZhN2FjMzIwNmYiLCJjb2duaXRvOmdyb3VwcyI6WyJQTEFZRVJTIl0sImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5ldS13ZXN0LTMuYW1hem9uYXdzLmNvbVwvZXUtd2VzdC0zX2xFbzJsUzlWciIsImNsaWVudF9pZCI6IjUxMGlpcjAzazlzMG9nOGJkbmY3a2lzZjBjIiwib3JpZ2luX2p0aSI6IjRjZTZhYWMzLTgxOTAtNDMyMi05MzNjLTkwYzQ1Zjk3OWEyMCIsImV2ZW50X2lkIjoiOWE5MjA3YjctYTIzZC00OTIwLTgwOGYtMTUxYmMyZjZiNTNiIiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTY5MTcwNTQ0MSwiZXhwIjoxNjkxNzA5MDQwLCJpYXQiOjE2OTE3MDU0NDEsImp0aSI6IjAxODg1NWU5LTNmMjgtNDViZC05NTI3LTY1OWZhNjVmNTU3MyIsInVzZXJuYW1lIjoiNDFkOTMwZmUtYzA1MS03MGZhLTY0YjUtOWNmYTdhYzMyMDZmIn0.I6rfH34z0WqdwGcvhBzvUmhdpF9eWFxR2AnoZAZmfApplKgsir9jOxj4NOBfiOaBRrVhk5t2v3RiSVg_OoHi1tWQVXeEVl-ual2YwmzW91uH8Q4utVDJHNl11y4N6MNPDUBxQJjUX6CbYUOgJ1GsJE2-LQz48uDaDJ74dZY2UxMQnO-ma4wS-7Ger33WNyyYnKowzZC_bBZEwy1vjThJFSyUWeysOgsZn1XfDa-0TcjJdu2i3wnBFYM3clyCs3xPY6I5QBtQzJlykcwQrVdeswjUwItFuSbiLCs6DSorDf5NyzAkbji18_FWXNbk8UsTFBsLzvKpEaofxMZDinG69Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"draw_id\": 2,\r\n    \"game_id\": 5,\r\n    \"double_ticket\": false\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/player/ticket",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"player",
+								"ticket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add ticket for Boule draw",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiI0MWQ5MzBmZS1jMDUxLTcwZmEtNjRiNS05Y2ZhN2FjMzIwNmYiLCJjb2duaXRvOmdyb3VwcyI6WyJQTEFZRVJTIl0sImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5ldS13ZXN0LTMuYW1hem9uYXdzLmNvbVwvZXUtd2VzdC0zX2xFbzJsUzlWciIsImNsaWVudF9pZCI6IjUxMGlpcjAzazlzMG9nOGJkbmY3a2lzZjBjIiwib3JpZ2luX2p0aSI6IjY2NGI5MDA4LTc5NTgtNGYwOC1iMGQzLTA2ZGE0NzgxNzM0YiIsImV2ZW50X2lkIjoiOGY0ZmRlYmItMDJiYi00MTNmLTk0ZDQtYWE5MzgwMmI1ZWU2IiwidG9rZW5fdXNlIjoiYWNjZXNzIiwic2NvcGUiOiJhd3MuY29nbml0by5zaWduaW4udXNlci5hZG1pbiIsImF1dGhfdGltZSI6MTY5MTk0NDU3MCwiZXhwIjoxNjkxOTQ4MTcwLCJpYXQiOjE2OTE5NDQ1NzAsImp0aSI6IjA4YTZhNjNlLTgyZmYtNGY1Mi04N2M5LTFmNjdiZjY4MWVjMiIsInVzZXJuYW1lIjoiNDFkOTMwZmUtYzA1MS03MGZhLTY0YjUtOWNmYTdhYzMyMDZmIn0.awpQNsMJbXd8ESqeA12xYxvgLJ4qm26GG-Ul6VLMfBhV982evRUmp6ZaxJDPFV1JmHOZCgWVAtUOtJCBBE2yFlJbV--soZnp7Kmi0dOvo1U4jLK_OknTmfv6RNUuMf5jcSxg4LLjkdzEa-eU0YtetBxz5TlibMVnSk4KixC9IaT3CN6C2nMTMbIrsSH7Y0CsqCDxgK6Dx_UhhkdUpHDJudZLyL6z16zyDItciTHDLPXegHxVMkKUyk6AuOoPWQ7xsHKJWXxj2Rxc7cTvfGTuG5MGBRoucHIgK8WRXOiw5HQP4f4hIlXB-3A92QHAUbXVpeDvg3GYgYFrgzQed75wNw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"draw_id\": 18,\r\n    \"game_id\": 9,\r\n    \"double_ticket\": false,\r\n    \"ticket_ball_number\": \"50-40-30-20-10-20\"\r\n}\r\n\r\n\r\n// prob draw 4 game 6 weekly",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/player/ticket",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"player",
+								"ticket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "insert double ticket",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiIxMWM5ZDBmZS0yMGQxLTcwMWQtOTJkNi1hOGRjMDNhNmFkZjYiLCJjb2duaXRvOmdyb3VwcyI6WyJQTEFZRVJTIiwiQURNSU4iXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmV1LXdlc3QtMy5hbWF6b25hd3MuY29tXC9ldS13ZXN0LTNfbEVvMmxTOVZyIiwiY2xpZW50X2lkIjoiNTEwaWlyMDNrOXMwb2c4YmRuZjdraXNmMGMiLCJvcmlnaW5fanRpIjoiMWI0YTgyNDUtYmUzOC00NWI0LTg1Y2YtZjMyZDQ5MGFhZjFjIiwiZXZlbnRfaWQiOiJiZDA0NDg3Ny0yYmZkLTQ4ZTItYTQxZS1mZTM1MzNkZjVkYjciLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjkxNzA2NDgyLCJleHAiOjE2OTE3MTAwODIsImlhdCI6MTY5MTcwNjQ4MiwianRpIjoiZWUxNTFlNjctNjFlZi00ZDQxLWFkMTMtZjU0ZGQ2Yjg2OGJjIiwidXNlcm5hbWUiOiIxMWM5ZDBmZS0yMGQxLTcwMWQtOTJkNi1hOGRjMDNhNmFkZjYifQ.uCj2zUhhZbd2RGiPy9ojvkutWbRAI5ao-sR23CrQzYSuYfX73jcN0GVrwqz3uRCB8XUjIPY9AY6yzfrT5AmfzF9LYCsaW0qPc2tgoxQ6msX69ipp36jylYg5_ydIcGBuQeHr_ZIyfJypnlV8dW0W-kJgPyNotGqNyLiUBVlwYQlgW4_V-CrK2LHe_cr44RDNlvhTWSj9SXpnLMVhEEUKDZCJjiH-uzay9cCtp4V7Fc-iC1jrJdki541Ck6b5V8UbK6uq82yRuddyzHDUbckABBnr53Dtik0SRbSuvqk6nizmuf_Dcs7YaC5nDfsVlRLC4qdwqlozRK7JPFvR3gzSjw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"draw_id\": 3,\r\n    \"game_id\": 3,\r\n    \"double_ticket\": true,\r\n    \"draw_id_double\":4,\r\n    \"ticket_ball_number\": \"49-39-29-19-09-50\",\r\n    \"ticket_ball_number_double\": \"03-01-30-25-69-07\"\r\n\r\n\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/player/ticket",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"player",
+								"ticket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all tickets",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiI3MjZmNTQ2ZS0zOTVlLTRhZTAtOWYzZS1jOGNhM2UwZjQ5NjAiLCJldmVudF9pZCI6IjhhYWYyNWNhLWIyMjAtNDJiYi1iZGI0LWM0NDk5ZWNjNzM5OCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTEyMzU2OTQsImV4cCI6MTY5MTIzOTI5NCwiaWF0IjoxNjkxMjM1Njk0LCJqdGkiOiIxYWFkODMwOC03MzRmLTQ5YzItYWEyMi01YWYwNmQ0MTI0M2UiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.IHVwT8OzupdLPmu1_urly-DkGDsFr2k3IezxUUA6cDwpPiWd7kag_aKWYlQBbiFYDkVt94yA_UN7q9jpc4cECHt9Q32s-nIi3ullIM2KlzBPr0845iCHWKkBBK8wO3XyHFUE6ee1u47TLQ5OdSk5OrNI2AddziDRTNZH_jO1gpQa-f2J5dga5rjcrEx9cpYl8Z67voyUydXAdC8I3b5WaCCTK7lkr3fp81XKwQR6Tv2myHGgiK_pA0D_0Ew_tiIMM95W4WpKrrXK9NOIN1ZOFrRpXBdPLREi8v89iPedhI41DTawYwC8Tp6KWkwuPOS7BBggXd7AvX3WKOZSxA74CA",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/ticket",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"admin",
+								"ticket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get ticket by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiI3MjZmNTQ2ZS0zOTVlLTRhZTAtOWYzZS1jOGNhM2UwZjQ5NjAiLCJldmVudF9pZCI6IjhhYWYyNWNhLWIyMjAtNDJiYi1iZGI0LWM0NDk5ZWNjNzM5OCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTEyMzU2OTQsImV4cCI6MTY5MTIzOTI5NCwiaWF0IjoxNjkxMjM1Njk0LCJqdGkiOiIxYWFkODMwOC03MzRmLTQ5YzItYWEyMi01YWYwNmQ0MTI0M2UiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.IHVwT8OzupdLPmu1_urly-DkGDsFr2k3IezxUUA6cDwpPiWd7kag_aKWYlQBbiFYDkVt94yA_UN7q9jpc4cECHt9Q32s-nIi3ullIM2KlzBPr0845iCHWKkBBK8wO3XyHFUE6ee1u47TLQ5OdSk5OrNI2AddziDRTNZH_jO1gpQa-f2J5dga5rjcrEx9cpYl8Z67voyUydXAdC8I3b5WaCCTK7lkr3fp81XKwQR6Tv2myHGgiK_pA0D_0Ew_tiIMM95W4WpKrrXK9NOIN1ZOFrRpXBdPLREi8v89iPedhI41DTawYwC8Tp6KWkwuPOS7BBggXd7AvX3WKOZSxA74CA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/ticket/1",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"admin",
+								"ticket",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get tickets by user_id for admin",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiJjZmVjNTQ2My1iZjY1LTRmYTgtOTNjNS0zMmU4MGNkMTY2YWIiLCJldmVudF9pZCI6ImI5ODNlOWJjLWNhODctNDFmNS05OWNkLTI2ZmZlNTdhMDVhOSIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE0ODIwMDEsImV4cCI6MTY5MTQ4NTYwMSwiaWF0IjoxNjkxNDgyMDAxLCJqdGkiOiJiZWM0MzA1YS1hYzYyLTRlNmYtODI2Mi0wZmU1ODJkZDY2NjUiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.M0HJu4Utsgzv9XjUbMLy7sys3aHPnPEMgC793izZm6mYO8vHKEwqkQJpf5TGzbdT36ZUqx69Zs9xi0ec4qXNx60fn7bXCYP4ApV0qVinW1fw-NIelqVM2_NGI69q4FoGuc49z8v4FebBV320dV7Dybqj-syuKb3lT2Iv8WiwnhR3x2Lk2RfLDQqVxbMr2PSkgnOGtSbiWhx3dEQmCVf4Tr2qzo19yIKSiDBA3ZvCYDtrbycIKGBxKkPa0vaq7-uui3f3Fh-yC8dcTDLgSxDcmMhpeDPhF7DMV_nUqun-F-9b2aihTCzbaWL4lWSlZzl2CZBfKpvRluQ0Y4zVw5h-BQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/ticket?id_user=11c9d0fe-20d1-701d-92d6-a8dc03a6adf6",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"admin",
+								"ticket"
+							],
+							"query": [
+								{
+									"key": "id_user",
+									"value": "11c9d0fe-20d1-701d-92d6-a8dc03a6adf6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get tickets by user_id for player",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJkMWM5MzBkZS0zMGYxLTcwYjgtZjhhOC02MGNjZjI3OWY0ZjkiLCJjb2duaXRvOmdyb3VwcyI6WyJQTEFZRVJTIiwiU0VMTEVSUyJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiJmOGY2ZTIwNi1iNTYxLTQ5NzctYTA0ZC1jYjYyZDA2MWQyNjQiLCJldmVudF9pZCI6ImU4YmNjN2JmLWQ3MmEtNDQxNC1iZmNlLTQ4NmQxNTc3NTMxYyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE0ODM2NTcsImV4cCI6MTY5MTQ4NzI1NiwiaWF0IjoxNjkxNDgzNjU3LCJqdGkiOiI3OTE5NzQ0YS00NWIzLTRhZGYtOTMxNC01M2ViZDk3MjIzMzciLCJ1c2VybmFtZSI6ImQxYzkzMGRlLTMwZjEtNzBiOC1mOGE4LTYwY2NmMjc5ZjRmOSJ9.C-bixchxXFdeuZzOL1MAERWimgsZQTiwB6KIZ4Shji4_0AgjP6iMNvSr-2xGdmmA637lkDzNSzPRkzjC7Z2B0blYw_Yl6dsPsbMQAh_TGKh-fX9FNGrTg0hHB2FQ8gVUWhxVtLB0pEGvl_AhmdeNJJjuld9Op_Jq2D_OQVFNVVHr3b8dpnwUTFE5mq1xbYIhxnlQdMuv0wmb8-Iais2p5-alwtrISfbU3cY7tZdZY2SbmVrpEZSrkgSVCXOkUGYsoUgvgO35-VriTR82IxFacBfNpfSIiiU2S8hqxiI3U2At-5UIQ6O7YLVn3dMmL0-CfaoEHDi9_ls5c0zf09EWkQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/player/ticket",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"player",
+								"ticket"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TICKET PRICE",
+			"item": [
+				{
+					"name": "add ticket price",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiIxNjI4MDEyNC01MDg2LTQ3MTktOTJkYy00NzNhY2YzZDA5N2EiLCJldmVudF9pZCI6IjZlMTNkOGNkLTkxZDgtNGE4My04M2VmLWNmNDhkMmZiN2Q2NSIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE3NDAzOTUsImV4cCI6MTY5MTc0Mzk5NSwiaWF0IjoxNjkxNzQwMzk1LCJqdGkiOiJhOGFlNDNlMS00MmNmLTRiMDAtOWZlNy0zNWNkNmQ2NTRlMWUiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.vu27ZATN7cYM9xe_neSpFADwToPbkouUho6TTavCbuEm3KSXseBJHeEfP59D0GGGvU0eKfD1LtRZ-ZmXXfP5wtLjpIrin1zvj_xm7vytcQ193-x2jQvyjovYDDgzyoJJEXjFXMx8CJE4GZSLg-V503yg1OwjV1_LdAJqZeRrn9xc2k6Zn2caKEtLeYhZ_5V8WFWkI3XxG9d6VJx4nrgSwyddMW2Yvd8Z-IKnF0zzbd8UFDHXOSFOHMt1MbpH0lofeG_bzFPhGEOvpkBEJm-QBkYUHe3FWk74AepdxFAKvyA1lFd5vDpyT3AoAx0MyXVJQzHntctYXau8mrBQCrMODA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"price\" : 8.5,\r\n    \"ticket_type\":\"W\",\r\n    \"start_date\": \"2020-01-01T10:00:00Z\",\r\n    \"end_date\": \"2020-01-31T18:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/ticket_price",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"admin",
+								"ticket_price"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all ticket price",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiIzMzBjNDFjOS01MzFlLTQ0MzMtYjEyMy1jYzIxOTc5ODA4ZjUiLCJldmVudF9pZCI6ImZlYWY1NWEyLWY4ZDktNDE2ZC1iYTBkLWI2MWNmMDM2ZjM0ZCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE1MDE3MDEsImV4cCI6MTY5MTUwNTMwMSwiaWF0IjoxNjkxNTAxNzAxLCJqdGkiOiI0YTZkMDIxMi0yMjA3LTQyZDgtOTRlMy1iOWNkMTgwNzQ4OGUiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.PjQm0Tgk2pAr4-Y7hvIYlHGpg670yRJw8xuYbZnMGtholz_YM1ZR-6dHfACzhQvBHpmH_FVkslMrkBh1I85DaSalOilGXLi0j5S9lHe8h_LurvzbvWGaG8R8R9eFiXwkDYUFUkWSTBUuuumGnha1bUWW9z3XtQdQ-qwQIY-2pPlQPA58MG516lhKISvNzu_fSj_pwHTA0YGSfjdDsiT4qjVMQ5C5LAaYT3iYo5vUhhXW-aDUpXpa5jguJKdUnVD4pSEhtofxjIcetGBIXjIWGQ5tGo5BBAcFGJwP2szI5BVoyMxf72mPa-HxPF-SuThGEQT1AhFCnNN37CFWiBHvPQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/ticket_price",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"ticket_price"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get ticket price by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiJjN2ViZDk2OS05NGJhLTRlNTctYTA0Mi1iMzk4MjAwNmE2ZDciLCJldmVudF9pZCI6IjM3N2FjNDc4LTM3ZDAtNDc4Zi1hYTRmLTA3N2UzN2MwYjhiMSIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTExNTUwMjAsImV4cCI6MTY5MTE1ODYyMCwiaWF0IjoxNjkxMTU1MDIwLCJqdGkiOiI5OTJhZWQzYy00NzcyLTQ0MmYtODE5ZC1iNTJlY2NmN2YzOWMiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.udusV3McW4mn10EuyhMBscuDH9U0hNj3GfvGXLgpMutvGVqPRP_tqFi3DBP9bMeAJsgWIxBcLBAvo9zB2KSY1MVW-zqy0lfFf2YZqChy7-FGDtXlo0yce_1ircLXuZL1ZjKlPznDEx85Z88ttJa5xUnINcnlqry7P_hCcXE5wLo-40kPQGRtQt2RgKih2JM7YdYlk5LbLrzj_k6spYndYmvYCro1vxHrgZY_53NZ_p1I3rQL2jwEY65wC9zitqX_w-dzCtGMAgQ_vONzHil7awrLXU_EI_9T338_zQCpCzJZNPAuaXp9jmtIizzVvt0qj7iJf4FyEXhuWQH5gVJvYQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/ticket_price/5",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"ticket_price",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Ticket price",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiIxMWM5ZDBmZS0yMGQxLTcwMWQtOTJkNi1hOGRjMDNhNmFkZjYiLCJjb2duaXRvOmdyb3VwcyI6WyJQTEFZRVJTIiwiQURNSU4iXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmV1LXdlc3QtMy5hbWF6b25hd3MuY29tXC9ldS13ZXN0LTNfbEVvMmxTOVZyIiwiY2xpZW50X2lkIjoiNTEwaWlyMDNrOXMwb2c4YmRuZjdraXNmMGMiLCJvcmlnaW5fanRpIjoiNzVjNTQ1MWYtNWM2OC00Y2ExLTliOWEtNTFmYTdmMmE5NGNmIiwiZXZlbnRfaWQiOiJkNDk1YmNkOC02MjlkLTQzNDYtOTlhOC1jNGNhNDBkY2RkNGQiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjkxMDE4NTI0LCJleHAiOjE2OTEwMjIxMjQsImlhdCI6MTY5MTAxODUyNCwianRpIjoiYWUyMjIzZTQtZjliMi00Njc3LWFkYjItZmYxNmFhZjBhNGU4IiwidXNlcm5hbWUiOiIxMWM5ZDBmZS0yMGQxLTcwMWQtOTJkNi1hOGRjMDNhNmFkZjYifQ.Dc7m84khMARfIuSmqJwUP4UTQ94FAf8lsgvnOYstpMV0Y8s2SZbBkzz3GJ-LNzU1dnvWb0LxKynokrh5ztko4k97lT4CwoWgeSbRYusiBvkL3U0uBc46ONf2eb9lsg06UaOpsOTUg7uS7SxiT6Bt6gKmrKVjmnoBEqFPrGdXl7YWsJ0N90-9OvEtTzsTjNi-TFW2vGze8GlhNFx2EbV7fLCKzEo624nkuxft6OdXfZXc-Gx0-ghTn73QAgS2Zy78q32I3OwNaVwYHecfoa1-75BZaY0XvjY4ENfAqJtGaxKch8BBHsBS1aXWJym1Dx8_GqZNCSBvctn_lNsJgzDJ6w",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/ticket_price/9",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"admin",
+								"ticket_price",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update ticket price",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiIxMWM5ZDBmZS0yMGQxLTcwMWQtOTJkNi1hOGRjMDNhNmFkZjYiLCJjb2duaXRvOmdyb3VwcyI6WyJQTEFZRVJTIiwiQURNSU4iXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmV1LXdlc3QtMy5hbWF6b25hd3MuY29tXC9ldS13ZXN0LTNfbEVvMmxTOVZyIiwiY2xpZW50X2lkIjoiNTEwaWlyMDNrOXMwb2c4YmRuZjdraXNmMGMiLCJvcmlnaW5fanRpIjoiMDg0MmQ4MWYtODg4My00MTFlLTkwZWEtYjQ4MTRhM2IzY2YyIiwiZXZlbnRfaWQiOiIwZTcxNGEzZS1kNTI2LTRhMWItODdlNS00YmI3YjRlZGUwYmEiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjkxNzM5ODA3LCJleHAiOjE2OTE3NDM0MDcsImlhdCI6MTY5MTczOTgwNywianRpIjoiYTk2MjFlOGUtMzVlMi00MmI0LTg4YzAtYzlkYmRjMmNiMTVlIiwidXNlcm5hbWUiOiIxMWM5ZDBmZS0yMGQxLTcwMWQtOTJkNi1hOGRjMDNhNmFkZjYifQ.UsL1ncqdwz6pO28V2JikKj0SbaJmFKYO9CTMdHktV1_lLFu4LctcLIzbg5BWvt0KMuAvtQlEG7x6rdzzqnYH7J6wD8rCA7lgJV0ofYqdKokRas6DZR3G7VnW2RBjo2bnvSEvsm3PLlRO__aeTGr6Rrh7WJSRuaCjveKNM7fJPOQwTqaLzACMozXGY8mGXVw-0PYIIS5A0NwnalnHDDcQbYdhb2JdBGXxAimYvXCwfADr0z33mQ5UrHwdYTjjigoVeRm6eyUTMk8tlnJ7B2DM14nke2MMeys7dOinibglQUVkfaFYTXDRTiJ0I6KuuxT1zGTovCfvFNbXBOGpcCryBg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"price\": 25.99,\r\n  \"ticket_type\": \"BW\",\r\n  \"start_date\": \"2020-08-10T10:00:00Z\",\r\n  \"end_date\": \"2030-08-15T18:00:00Z\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/ticket_price/12",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"admin",
+								"ticket_price",
+								"12"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "get all users / get users in group",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiI4NTYyOWU1ZS0wZDIxLTQ3NDYtYjE2MC1hMGI0YTMwNWViNDIiLCJldmVudF9pZCI6ImRhODJkZDBkLWJiZjktNGEzZi1iYmZjLTc5OWFmYzYxOWI4MiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE0ODY4ODksImV4cCI6MTY5MTQ5MDQ4OSwiaWF0IjoxNjkxNDg2ODg5LCJqdGkiOiI1N2UxNGU1My02MDNjLTQzMmQtOGEwZS0zMzYxOGJiNGUzNjQiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.OhYlA6HdCXbdewk3ak6Vz3P_7ASciT1pOmSB-CVsQhPYFK13WzMUnuvhG2UMlImpT4jj78H6zn9W_PbGHqPTLwAtVtt7ZxnLDVcx6ofmr534iEEewMTlo9ielb-5kpyO-s9NYZeedLQVseBrUIwD9qZu4Tr_NGKH2zpt3YlyycxQQR1eNRorRYuRKzFMsrAcpg-USqXXI7N6xnQ-EhKF0L70kzs_xVlblW2t4BF8L1wKE6hy8ywPMJ3wq0Qs1aKcKXqL8J9bmZpykwOmxFHjqtK2LifFmoLwG_ZmYrJ6qVuOVHXnp5UTaYbFJMDkH_s6HzNWvKO28ZsF_evvXcRCjw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/users?group=SELLERS",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"admin",
+								"users"
+							],
+							"query": [
+								{
+									"key": "group",
+									"value": "SELLERS"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Disable user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiJiYzdhZjYxNi1jZDYxLTRkOTItYmU0Yi05ZWE1ZjA4OWZhOGIiLCJldmVudF9pZCI6IjNhNzNiNjk1LTk5MDUtNDNmMi04MGEwLTA2ZTE3NmNmZDBmMiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE3NDcwOTAsImV4cCI6MTY5MTc1MDY5MCwiaWF0IjoxNjkxNzQ3MDkwLCJqdGkiOiJjZmNmZjE4Zi02OWJkLTQwMDEtYmQxNS04NzY2MDk3YTBjYTYiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.kXfkHLNqljKWqe3N518nl_v0gnkBDVRo5TGGrgIZ3UexaIWDqMQsnA82OHqFWLzOIp_hvCxKJ0q66fJF5xDWQt2o5FtU3A5u0rPJY2kHPKc1Z1xXyiGJcYXUdwWQNXhYSceBf6tDFgjxLXrFoFj6XHIuInLV4Fj7s9HwT3YzagWP9UOD6xuj2nLBChG6WYmc08jw6YRw1X8iQZ-XQtb36_VEAOJ-6i7W1rGuoA6PnEzOUqvPmeyK3lFsGOjRFA4z7o6QWLZ09cmiCASX_Iu4AnqSSGr0--6L03oIajWoKuQB_vOCrvPVCNwdondioTOr1n31nLJx_qskbf0a4kVVrQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"manar.hedhli24@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/users/disable",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"admin",
+								"users",
+								"disable"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Enable user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiJiYzdhZjYxNi1jZDYxLTRkOTItYmU0Yi05ZWE1ZjA4OWZhOGIiLCJldmVudF9pZCI6IjNhNzNiNjk1LTk5MDUtNDNmMi04MGEwLTA2ZTE3NmNmZDBmMiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE3NDcwOTAsImV4cCI6MTY5MTc1MDY5MCwiaWF0IjoxNjkxNzQ3MDkwLCJqdGkiOiJjZmNmZjE4Zi02OWJkLTQwMDEtYmQxNS04NzY2MDk3YTBjYTYiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.kXfkHLNqljKWqe3N518nl_v0gnkBDVRo5TGGrgIZ3UexaIWDqMQsnA82OHqFWLzOIp_hvCxKJ0q66fJF5xDWQt2o5FtU3A5u0rPJY2kHPKc1Z1xXyiGJcYXUdwWQNXhYSceBf6tDFgjxLXrFoFj6XHIuInLV4Fj7s9HwT3YzagWP9UOD6xuj2nLBChG6WYmc08jw6YRw1X8iQZ-XQtb36_VEAOJ-6i7W1rGuoA6PnEzOUqvPmeyK3lFsGOjRFA4z7o6QWLZ09cmiCASX_Iu4AnqSSGr0--6L03oIajWoKuQB_vOCrvPVCNwdondioTOr1n31nLJx_qskbf0a4kVVrQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"manar.hedhli24@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/users/enable",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"admin",
+								"users",
+								"enable"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiI2NThhYmZiYi01OWNkLTRjYTctOGFkNy0xNDc3MDUyOTRkNTEiLCJldmVudF9pZCI6IjFjMDc2YWVlLWFhNjktNGVkZC1iM2JlLTE3YzU4NTJlZjYyYyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE0ODk1MTcsImV4cCI6MTY5MTQ5MzExNywiaWF0IjoxNjkxNDg5NTE3LCJqdGkiOiJlZjVhNWFiYy1hMTA3LTQ3OTgtYWRlYy05ZTI0MDU3NGE0MGMiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.m8xrZsoHlUwArgxq11PE24nUcKCvhTMS989TDRmIU0WBwySnyQf2NMwIA36AUr_IS6WkxRvFMiuzraorZJTH7e-dw1X-WvMnQZJAENPPhHq4ZzxUFiY0pFa4Bg03mIackkS3ahscdQjESvMhlFGco1RF-apYwS0DFwN_xgG3_4rcGdMypm7OCRU71tqJeTjssNZUtNLNewAKYUntS5j1RO0kaX7WYFMxtFg5k9U-bz1ZhY-zvEwOxKI2AxZNJsWYWGrrQIQvlK9JXQ7DBuc5C-Q6VUBdhh6_PppTYZ99xxY89gKo1L7FnpnZTz-6q3h6hbweMMqohwXD4BLusjMl_w",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/users/d1c930de-30f1-70b8-f8a8-60ccf279f4f9?fbclid=IwAR1gFCtALmIF9tT4B54trU5C09IJAwSGrMH7qS6HWX_F8TM-9zL7VR-sIU4",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"admin",
+								"users",
+								"d1c930de-30f1-70b8-f8a8-60ccf279f4f9"
+							],
+							"query": [
+								{
+									"key": "fbclid",
+									"value": "IwAR1gFCtALmIF9tT4B54trU5C09IJAwSGrMH7qS6HWX_F8TM-9zL7VR-sIU4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get list of potential winners",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJraWQiOiIySlVcL21tOUNSYVpFc2pnYmNURzhnT2sxdW02R2t6YkRRUkpCQVwvMStVUk09IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJlMWY5MzBhZS05MDYxLTcwZTItOTIzZi1kMDBlNDI4ODJhOTciLCJjb2duaXRvOmdyb3VwcyI6WyJBRE1JTiJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuZXUtd2VzdC0zLmFtYXpvbmF3cy5jb21cL2V1LXdlc3QtM19sRW8ybFM5VnIiLCJjbGllbnRfaWQiOiI1MTBpaXIwM2s5czBvZzhiZG5mN2tpc2YwYyIsIm9yaWdpbl9qdGkiOiJlZTAyMWU5MS0yZTdkLTQ1ODgtOTUxNi0xM2IxZTVhMzRkNzUiLCJldmVudF9pZCI6IjYxZmJkOGNjLTRjZTgtNDRmMy04MjZiLTliMDc1NTk3M2U1ZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTE0OTA1MjYsImV4cCI6MTY5MTQ5NDEyNiwiaWF0IjoxNjkxNDkwNTI2LCJqdGkiOiIyZTQyZGYyYy04NzhhLTRhZTUtYWI1Ny02NWExOTYzZGIxMzAiLCJ1c2VybmFtZSI6ImUxZjkzMGFlLTkwNjEtNzBlMi05MjNmLWQwMGU0Mjg4MmE5NyJ9.Y1FwjppQQzemw1kxrErMU4_nmU2zPc_BAxZeoTbAly_ngol3WlCDihbv1SAQSgv08gmg5Mfo_hRfndN-lXMqwXe-QoQ67yrSKFUGtx6cU5qOpSCJx0DKDb45BeBq5zm-u1tHyDBAylL6LpZSOUVlEk7w_vu47S_pfkb8psqhXDgq3Z89mqKsj2K5-LCOFn3XI59TXKmKpKYrZRkhYIwirz8uu1ySQ0RxQbYr4eXAVLiKkH-gGD-Pzqhu_kaBCtg4JMRsHtmIVuWYMFxXNMdcOA__GpucHF8m7XubWSvNC5rZ2Ufbtn5kUh4u9Ovfo1yS2q6uXsSATJ4vC_QHjSNJBg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://n8z9k2prmd.execute-api.af-south-1.amazonaws.com/dev/admin/draw/3/result/potential",
+							"protocol": "https",
+							"host": [
+								"n8z9k2prmd",
+								"execute-api",
+								"af-south-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"admin",
+								"draw",
+								"3",
+								"result",
+								"potential"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
